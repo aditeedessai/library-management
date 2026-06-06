@@ -1,0 +1,93 @@
+:root {
+  --bg: #0047ba;
+  --text: #111;
+  --muted: #666;
+  --accent: #2f00ff;
+  --card: #fff;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+  margin: 0;
+  background: #f4f5ff;
+  color: var(--text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
+    background: #ffffff;
+  
+  padding: 12px 0;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a {
+  margin-left: 12px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+/* Form */
+.form-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background: white;
+}

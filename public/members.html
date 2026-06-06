@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Members - Mini Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <h1>Mini Library</h1>
+            </a>
+
+            <nav class="nav">
+                <a href="books.html">Books</a>
+                <a href="members.html">Members</a>
+                <a href="issued.html">Issued</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Members</h2>
+
+            <div class="form-row">
+                <input id="mname" placeholder="Member name">
+
+                <input id="joindate" type="date">
+
+                <button id="addM" class="btn">
+                    Add Member
+                </button>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>JoinDate</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="membersBody"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script type="module" src="js/members.js"></script>
+</body>
+</html>
